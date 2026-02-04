@@ -1,0 +1,11 @@
+<h2>
+    Hello to my site
+
+</h2>
+
+{% for post in posts %}
+   <hr>
+    <h3>{{ post.title }}</h3>
+    <p> {{ post.content }}</p>
+
+{% endfor %}
