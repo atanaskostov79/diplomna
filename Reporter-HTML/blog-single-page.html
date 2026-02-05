@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Blog Single - Reporter</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="../static/images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" href="../static/images//apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" href="../static/images//apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="../static/images//apple-touch-icon-57x57-precomposed.png">
+	
+	<!-- Library - Google Font Familys -->		
+	<link href="https://fonts.googleapis.com/css?family=Bentham|Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:400,700|Noto+Serif:400,400i,700,700i|Oswald:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
+		
+	<!-- Library -->
+    <link href="../static/css/lib.css" rel="stylesheet">
+	
+	<!-- Custom - Common CSS -->
+	<link href="../static/css/plugins.css" rel="stylesheet">
+	<link href="../static/css/elements.css" rel="stylesheet">
+	<link href="../static/css/rtl.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+		
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body>
+	<!-- Loader -->
+	<div id="site-loader" class="load-complete">
+		<div class="loader">
+			<div class="loader-inner ball-clip-rotate">
+				<div></div>
+			</div>
+		</div>
+	</div><!-- Loader /- -->	
+
+	<!-- Header Section -->
+	<header class="header_s header_s1">
+		<!-- SidePanel -->
+		<div id="slidepanel">
+			<!-- Top Header -->
+			<div class="container-fluid no-right-padding no-left-padding top-header">
+				<!-- Container -->
+				<div class="container">
+					<!-- Row -->
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-3 top-menu">
+							<a href="#"><i class="icon_menu"></i> more</a>
+							<ul>
+								<li><a href="aboutus.html" title="About">About</a></li>
+								<li><a href="about-author.html" title="Author">Author</a></li>
+								<li><a href="contactus.html" title="Contact">Contact</a></li>
+								<li><a href="404.html" title="404">404</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-3 top-social">
+							<a href="#"><i class="social_share"></i></a>
+							<ul>
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6 top-search">
+							<form method="get" class="searchform" action="#">
+								<div class="input-group">
+									<input placeholder="Search" class="form-control" required="" type="text">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div><!-- Row /- -->
+				</div><!-- Container /- -->
+			</div><!-- Top Header /- -->
+			
+			<!-- Middle Header -->
+			<div class="container-fluid no-left-padding no-right-padding middle-header">
+				<!-- Container -->
+				<div class="container">
+					<!-- Row -->
+					<div class="row">
+						<div class="col-md-4 logo-block">
+							<a href="index.html"><img src="../static/images/logo.png" alt="Logo" /></a>
+						</div>
+						<div class="col-md-8 add-block-banner">
+							<a href="#"><img src="../static/images/top-banner.jpg" alt="Banner" /></a>
+						</div>
+					</div><!-- Row /- -->
+				</div><!-- Container /- -->
+			</div><!-- Middle Header /- -->
+			
+		</div><!-- SidePanel /- -->
+		
+		<!-- Ownavigation -->
+		<nav class="navbar ownavigation">
+			<!-- Container -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="../static/images/logo-2.png" alt="logo"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="index.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<ul class="dropdown-menu">
+								<li><a href="index.html" title="Home 1">Home 1</a></li>
+								<li><a href="index2.html" title="Home 2">Home 2</a></li>
+								<li><a href="index3.html" title="Home 3">Home 3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown mega-dropdown">
+							<a href="#" class="dropdown-toggle" title="Mega Menu">Mega Menu</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<div class="dropdown-menu megamenu">
+								<div class="col-md-2 col-sm-12 megamenu-categories">
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#iphone-ipad" role="tab" data-toggle="tab" title="Iphone & ipad">Iphone & ipad</a></li>
+										<li role="presentation"><a href="#android" role="tab" data-toggle="tab" title="Android">Android</a></li>
+										<li role="presentation"><a href="#design" role="tab" data-toggle="tab" title="Design Patterns">Design Patterns</a></li>
+										<li role="presentation"><a href="#apps" role="tab" data-toggle="tab" title="Apps">Apps</a></li>
+										<li role="presentation"><a href="#games" role="tab" data-toggle="tab" title="Games">Games</a></li>
+										<li role="presentation"><a href="#software" role="tab" data-toggle="tab" title="Software">Software</a></li>										
+									</ul>
+								</div>
+								<div class="col-md-10 col-sm-12 col-xs-12 megamenu-post tab-content">										
+									<div role="tabpanel" class="tab-pane active" id="iphone-ipad">
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post1.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Intex Aqua Style X Android 4.4 KitKat handset found listed</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post2.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Samsung will invest more in India's 4G mobile market</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post3.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Goddesses in demand shower blessings on e-tailers</a></h3>
+											</div>
+										</div>
+									</div>
+									
+									<div role="tabpanel" class="tab-pane" id="android">
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post1.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Samsung will invest more in India's 4G mobile market</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post2.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Goddesses in demand shower blessings on e-tailers</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post3.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Intex Aqua Style X Android 4.4 KitKat handset found listed</a></h3>
+											</div>
+										</div>
+									</div>
+									
+									<div role="tabpanel" class="tab-pane" id="design">
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post2.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Goddesses in demand shower blessings on e-tailers</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post3.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Intex Aqua Style X Android 4.4 KitKat handset found listed</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post1.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Samsung will invest more in India's 4G mobile market</a></h3>
+											</div>
+										</div>
+									</div>
+									
+									<div role="tabpanel" class="tab-pane" id="apps">
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post2.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Goddesses in demand shower blessings on e-tailers</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post1.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Samsung will invest more in India's 4G mobile market</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post3.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Intex Aqua Style X Android 4.4 KitKat handset found listed</a></h3>
+											</div>
+										</div>
+									</div>
+									
+									<div role="tabpanel" class="tab-pane" id="games">
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post3.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Intex Aqua Style X Android 4.4 KitKat handset found listed</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post2.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Goddesses in demand shower blessings on e-tailers</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post1.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Samsung will invest more in India's 4G mobile market</a></h3>
+											</div>
+										</div>
+									</div>
+									
+									<div role="tabpanel" class="tab-pane" id="software">
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post3.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Samsung will invest more in India's 4G mobile market</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post2.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Intex Aqua Style X Android 4.4 KitKat handset found listed</a></h3>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4">
+											<div class="type-post">
+												<div class="entry-cover"><a href="#"><img src="../static/images/megamenu-post1.jpg" alt="Post" /></a></div>
+												<h3 class="entry-title"><a href="#">Goddesses in demand shower blessings on e-tailers</a></h3>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</li>
+						<li><a href="aboutus.html" title="About Us">About Us</a></li>
+						<li><a href="about-author.html" title="About Author">About Author</a></li>
+						<li class="dropdown active">
+							<a href="blog-single-page.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog Single</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<ul class="dropdown-menu">
+								<li><a href="blog-single-page.html" title="Blog Single Page">Blog Single Page</a></li>
+								<li><a href="blog-single-audio.html" title="Blog Single Audio">Blog Single audio</a></li>
+								<li><a href="blog-single-video.html" title="Blog Single Video">Blog Single Video</a></li>
+							</ul>
+						</li>
+						<li><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+						<li><a href="404.html" title="404">404</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<ul class="dropdown-menu">
+								<li><a href="blog-single-page.html" title="Blog Single Page">Blog Single Page</a></li>
+								<li><a href="blog-single-audio.html" title="Blog Single Audio">Blog Single audio</a></li>
+								<li><a href="blog-single-video.html" title="Blog Single Video">Blog Single Video</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="loginpanel" class="desktop-hide">
+					<div class="right" id="toggle">
+						<a id="slideit" href="#slidepanel"><i class="fo-icons fa fa-inbox"></i></a>
+						<a id="closeit" href="#slidepanel"><i class="fo-icons fa fa-close"></i></a>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+		</nav><!-- Ownavigation /- -->
+		
+	</header><!-- Header Section /- -->	
+
+	<div class="main-container">
+
+		<main class="site-main">
+		
+			<!-- Single Post -->
+			<div class="container-fluid no-left-padding no-right-padding single-post">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<!-- Content Area -->
+						<div class="col-md-8 col-sm-6 col-xs-6 content-area">
+							<article class="type-post color-3">
+								<div class="entry-cover">
+									<img src="../static/images/single-post1.jpg" alt="Post" />
+									<div class="entry-header">
+										<div class="post-category"><a href="#" title="Business">Business</a></div>
+										<h3 class="entry-title">Way now cleared for Australian commandos to help Kroy's fight</h3>
+										<div class="entry-footer">
+											<span class="post-date"><a href="#">08 July, 2016</a></span>
+											<span class="post-like"><i class="fa fa-heart-o"></i><a href="#">356</a></span>
+											<span class="post-view"><i class="fa fa-eye"></i><a href="#">589</a></span>
+										</div>
+									</div>
+								</div>
+								<div class="entry-content">
+									<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.Newshub is known for his excellent interface and eye catching design.Newshub is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.</p>
+									<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.Newshub is known for his excellent interface and eye catching design reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.Newshub is known for his excellent interface and eye catching designNewshub is one of the excellent magazine in the world.Newshub magazine reached  very soon by his unique stories in the magazine  reached many readers very soon by his unique .</p>
+									<blockquote>
+										<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.Newshub is known for his excellent interface and eye catching design.Newshub is one of the excellent magazine in the world.Newshub magazine cis one of the excellent magazine in the world.Newshub magazine.</p>
+									</blockquote>
+									<p>Reporter is one of the excellent magazine in the world.Reporter magazine reached many readers very soon by his unique stories in the magazine.Newshub is known for his excellent interface and eye catching design.Newshub is one of the excellent magazine in the world.</p>
+									<p>Reporter magazine reached many readers very soon by his unique stories in the magazine.Reporter is known for his excellent interface and eye catching design. </p>
+								</div>
+								
+								<!-- About Author -->
+								<div class="about-author-box">
+									<h3>About Author</h3>
+									<div class="author">
+										<i><img src="../static/images/author.jpg" alt="Author" /></i>
+										<h4>Tommy Walker</h4>
+										<ul>
+											<li><a href="#" class="fb" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#" class="tw" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#" class="go" title="Google"><i class="fa fa-google"></i></a></li>
+											<li><a href="#" class="ln" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+										<p>reporter is one of the excellent magazine in the world.Newshub magazine reach many readers are very soon by his unique stories in the magazine.</p>
+									</div>
+								</div><!-- About Author /- -->
+							</article>
+							
+							<!-- Comment Area -->
+							<div id="comments" class="comments-area">
+								<h2 class="comments-title">Comments <span>(3)</span></h2>
+								<ol class="comment-list">
+									<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1 parent">
+										<div class="comment-body">
+											<footer class="comment-meta">
+												<div class="comment-author vcard">
+													<img alt="img" src="../static/images/comment1.jpg" class="avatar avatar-72 photo"/>
+													<b class="fn">Michel Tei</b>
+												</div>
+												<div class="comment-metadata"><a href="#">Oct 3, 2016</a></div>
+											</footer>
+											<div class="comment-content">
+												<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.</p>
+											</div>
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+											</div>
+										</div>
+										<ol class="children">
+											<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2 parent">
+												<div class="comment-body">
+													<footer class="comment-meta">
+														<div class="comment-author vcard">
+															<img alt="img" src="../static/images/comment2.jpg" class="avatar avatar-72 photo"/>
+															<b class="fn">Woes katrin</b>
+														</div>
+														<div class="comment-metadata"><a href="#">Oct 8, 2016</a></div>
+													</footer>
+													<div class="comment-content">
+														<p>reporter is one of the excellent magazine in the world.Newshub magazine reach many readers very soon by his unique stories in the magazine.</p>
+													</div>
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+													</div>
+												</div>
+											</li>
+										</ol>
+									</li>
+									<li class="comment byuser comment-author-admin bypostauthor even thread-odd thread-alt depth-1">
+										<div class="comment-body">
+											<footer class="comment-meta">
+												<div class="comment-author vcard">
+													<img alt="img" src="../static/images/comment3.jpg" class="avatar avatar-72 photo"/>
+													<b class="fn">David Worth</b>
+												</div>
+												<div class="comment-metadata"><a href="#">Oct 10, 2016</a></div>
+											</footer>
+											<div class="comment-content">
+												<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon by his unique stories in the magazine.</p>
+											</div>
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+											</div>
+										</div>
+									</li>
+								</ol><!-- .comment-list -->
+								<!-- Comment Form -->
+								<div id="respond" class="comment-respond">
+									<h2 id="reply-title" class="comment-reply-title">Leave a comment</h2>
+									<form method="post" id="commentform" class="comment-form">
+										<p class="comment-form-author">
+											<input id="author" name="author" placeholder="Name *" required="required" type="text"/>
+										</p>
+										<p class="comment-form-email">
+											<input id="email" name="email" placeholder="Your@email.com *" required="required" type="email"/>
+										</p>
+										<p class="comment-form-comment">
+											<textarea id="comment" placeholder="Your Comment" name="comment" rows="5" required="required"></textarea>
+										</p>
+										<p class="form-submit">
+											<input name="submit" class="submit" value="Post Comment" type="submit"/>
+										</p>
+									</form>
+								</div><!-- Comment Form /- -->
+							</div><!-- Comment Area /- -->
+							
+						</div><!-- Content Area /- -->
+						
+						<!-- Widget Area -->
+						<div class="col-md-4 col-sm-6 col-xs-6 widget-area">
+							<!-- Widget Recent Post -->
+							<aside class="widget widget_latestposts">
+								<h3 class="widget-title">Recent Posts</h3>
+								<div class="latest-content-box">
+									<div class="latest-content color-5">
+										<a href="#" title="Recent Posts"><i><img src="../static/images/wd-rcnt-1.jpg" class="wp-post-image" alt="blog-1"></i></a>
+										<span><a href="#" title="POLITICS">POLITICS</a> <a href="#">22 OCT 2014</a></span>
+										<h5><a title="Qaim says prominent people arrested" href="#">Qaim says prominent people arrested </a></h5>
+									</div>
+									<div class="latest-content color-2">
+										<a href="#" title="Recent Posts"><i><img src="../static/images/wd-rcnt-2.jpg" class="wp-post-image" alt="blog-1"></i></a>
+										<span><a href="#" title="SPORTS">SPORTS</a> <a href="#">22 OCT 2014</a></span>
+										<h5><a title="Way now cleared for Australian" href="#">Way now cleared for Australian </a></h5>
+									</div>
+									<div class="latest-content color-3">
+										<a href="#" title="Recent Posts"><i><img src="../static/images/wd-rcnt-3.jpg" class="wp-post-image" alt="blog-3"/></i></a>
+										<span><a href="#" title="BUSINESS">BUSINESS</a> <a href="#">22 OCT 2014</a></span>
+										<h5><a title="EU exit would leave Britain with zero" href="#">EU exit would leave Britain with zero</a></h5>
+									</div>
+								</div>
+								<div class="see-more"><a href="#" title="SEE MORE POST">SEE MORE POST</a></div>
+							</aside><!-- Widget Recent Post -->
+							
+							<!-- Popular Video -->
+							<aside class="widget widget_video">
+								<h3 class="widget-title">POPULAR VIDEOS</h3>
+								<div class="video-block">
+									<div class="video-post">
+										<a href="#"><img src="../static/images/popular-video1.jpg" alt="Popular Video" /></a>
+										<h5><a href="#"><i class="fa fa-play"></i>Qaim says prominent people arrested </a></h5>
+									</div>
+									<div class="video-post">
+										<a href="#"><img src="../static/images/popular-video2.jpg" alt="Popular Video" /></a>
+										<h5><a href="#"><i class="fa fa-play"></i>Way now cleared for Australian </a></h5>
+									</div>
+									<div class="video-post">
+										<a href="#"><img src="../static/images/popular-video3.jpg" alt="Popular Video" /></a>
+										<h5><a href="#"><i class="fa fa-play"></i>Way now cleared for Australian </a></h5>
+									</div>
+								</div>
+								<div class="see-more"><a href="#" title="SEE MORE Video">SEE MORE Video</a></div>
+							</aside><!-- Popular Video /- -->
+						</div><!-- Widget Area /- -->
+					</div>
+				</div><!-- Container /- -->
+			</div><!-- Single Post /- -->
+		
+		</main>
+
+	</div>
+		
+	<!-- Footer Main -->
+	<footer id="footer-main" class="container-fluid no-left-padding no-right-padding footer-main">
+		<!-- Top Footer -->
+		<div class="container-fluid no-left-padding no-right-padding top-footer">
+			<!-- Container -->
+			<div class="container">
+				<!-- Row -->
+				<div class="row">
+				
+					<!-- Widget About -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_about">
+							<h3 class="widget-title">ABOUT US</h3>
+							<div class="logo-block"><a href="index.html"><img src="../static/images/logo-2.png" alt="Logo" /></a></div>
+							<p>Reporter is one of the excellent magazine in the world. Reporter magazine reached many readers very soon by his unique stories . Reporter is one of the excellent magazine in the world.</p>
+						</aside>
+					</div><!-- Widget About /- -->
+					
+					<!-- Widget Working Time -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_latestposts">
+							<h3 class="widget-title">RECENT POST</h3>
+							<div class="latest-content">
+								<a href="#" title="Recent Posts"><i><img src="../static/images/wid-rcnt-post-1.jpg" class="wp-post-image" alt="blog-1"></i></a>
+								<h5><a title="Qaim says prominent people arrested " href="#">Qaim says prominent people arrested </a></h5>
+								<span><i class="fa fa-pencil-square-o"></i><a href="#">Jul 10, 2016</a></span>
+							</div>
+							<div class="latest-content">
+								<a href="#" title="Recent Posts"><i><img src="../static/images/wid-rcnt-post-2.jpg" class="wp-post-image" alt="blog-1"></i></a>
+								<h5><a title="Way now cleared for the Australian" href="#">Way now cleared for the Australian</a></h5>
+								<span><i class="fa fa-pencil-square-o"></i><a href="#">Aug 17, 2016</a></span>
+							</div>
+							<div class="latest-content">
+								<a href="#" title="Recent Posts"><i><img src="../static/images/wid-rcnt-post-1.jpg" class="wp-post-image" alt="blog-1"></i></a>
+								<h5><a title="Switzerland and Euro on make progress" href="#">Switzerland and Euro on make progress</a></h5>
+								<span><i class="fa fa-pencil-square-o"></i><a href="#">Sep 27, 2016</a></span>
+							</div>
+							
+						</aside>
+					</div><!-- Widget Working Time -->
+					
+					<!-- Widget Links -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_categories">
+							<h3 class="widget-title">categories</h3>
+							<ul>
+								<li><a href="#" title="Business">Business </a>(7)</li>
+								<li><a href="#" title="Sports">Sports</a>(4)</li>
+								<li><a href="#" title="Science">Science </a>(6)</li>
+								<li><a href="#" title="Economic">Economic</a>(8)</li>
+								<li><a href="#" title="Politics">Politics</a>(3)</li>
+								<li><a href="#" title="World ">World </a>(5)</li>
+							</ul>
+						</aside>
+					</div><!-- Widget Links /- -->
+					
+					<!-- Widget Category -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_tag_cloud">
+							<h3 class="widget-title">Popular tags</h3>
+							<div class="tagcloud">
+								<a href="#" title="Android">Android</a>
+								<a href="#" title="Apple">Apple</a>
+								<a href="#" title="Development">Development</a>
+								<a href="#" title="Dev and Design">Dev and Design</a>
+								<a href="#" title="Gallery">Gallery</a>
+								<a href="#" title="Games">Games</a>
+								<a href="#" title="Life and Style">Life and Style</a>
+								<a href="#" title="Technology">Technology</a>
+								<a href="#" title="Sports">Sports</a>
+							</div>
+						</aside>
+					</div><!-- Widget Category /- -->
+				</div><!-- Row /- -->
+			</div><!-- Container /- -->
+		</div><!-- Top Footer -->
+		<!-- Bottom Footer -->
+		<div class="container-fluid bottom-footer">
+			<p>&copy; 2016 Reporter All Rights Reserved. </p>
+		</div><!-- Bottom Footer /- -->
+	</footer><!-- Footer Main /- -->
+	
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="../static/js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="../static/js/lib.js"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="../static/js/functions.js"></script>
+	
+</body>
+</html>

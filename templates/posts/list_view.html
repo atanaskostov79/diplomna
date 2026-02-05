@@ -1,11 +1,71 @@
-<h2>
-    Hello to my site
+<!-- Recent Post -->
+			<div class="container-fluid no-left-padding no-right-padding recent-post">
+				<!-- Container -->
+				<div class="container">
+					<div class="section-header">
+						<h3>RECENT POSTS</h3>
+					</div>
+					<!-- Row -->
+					<div class="row">
+                        {% for post in posts %}
+						<div class="col-md-4 col-sm-6 col-xs-6">
+							<!-- Type Post -->
 
-</h2>
+							<div class="type-post color-1">
+								<div class="entry-cover"><a href="#"><img src="../static/images/recent-post-1.jpg" alt="Post" /></a></div>
+								<div class="entry-content">
+									<div class="post-format"><i class="fa fa-play"></i></div>
+									<div class="post-category"><a href="#" title="business">{{ post.title }}</a></div>
+									<h3 class="entry-title"><a href="#">{{ post.entry_title }}</a></h3>
+									<p>{{ post.content }}</p>
+									<div class="entry-footer">
+										<span class="post-date"><a href="#">02 July, 2016</a></span>
+										<span class="post-like"><i class="fa fa-heart-o"></i><a href="#">320</a></span>
+										<span class="post-view"><i class="fa fa-eye"></i><a href="#">2350</a></span>
+									</div>
+									<a href="#" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div><!-- Type Post /- -->
 
-{% for post in posts %}
-   <hr>
-    <h3>{{ post.title }}</h3>
-    <p> {{ post.content }}</p>
+						</div>
+  {% endfor %}
+{#						<div class="col-md-4 col-sm-6 col-xs-6">#}
+{#							<!-- Type Post -->#}
+{#							<div class="type-post color-6">#}
+{#								<div class="entry-cover"><a href="#"><img src="../static/images/recent-post-2.jpg" alt="Post" /></a></div>#}
+{#								<div class="entry-content">#}
+{#									<div class="post-format"><i class="fa fa-play"></i></div>#}
+{#									<div class="post-category"><a href="#" title="TECHNOLOGY">TECHNOLOGY</a></div>#}
+{#									<h3 class="entry-title"><a href="#">Grand Canyon Considers Changes to Back country</a></h3>#}
+{#									<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon.</p>#}
+{#									<div class="entry-footer">#}
+{#										<span class="post-date"><a href="#">15 Augest, 2016</a></span>#}
+{#										<span class="post-like"><i class="fa fa-heart-o"></i><a href="#">127</a></span>#}
+{#										<span class="post-view"><i class="fa fa-eye"></i><a href="#">756</a></span>#}
+{#									</div>#}
+{#									<a href="#" title="Read More">Read More <i class="fa fa-angle-right"></i></a>#}
+{#								</div>#}
+{#							</div><!-- Type Post /- -->#}
+{#						</div>#}
+{#						<div class="col-md-4 col-sm-6 col-xs-6">#}
+{#							<!-- Type Post -->#}
+{#							<div class="type-post color-5">#}
+{#								<div class="entry-cover"><a href="#"><img src="../static/images/recent-post-3.jpg" alt="Post" /></a></div>#}
+{#								<div class="entry-content">#}
+{#									<div class="post-format"><i class="fa fa-play"></i></div>#}
+{#									<div class="post-category"><a href="#" title="Sports">Sports</a></div>#}
+{#									<h3 class="entry-title"><a href="#">Grand Canyon Considers Changes to Back country</a></h3>#}
+{#									<p>Reporter is one of the excellent magazine in the world.Newshub magazine reached many readers very soon.</p>#}
+{#									<div class="entry-footer">#}
+{#										<span class="post-date"><a href="#">28 Augest, 2016</a></span>#}
+{#										<span class="post-like"><i class="fa fa-heart-o"></i><a href="#">651</a></span>#}
+{#										<span class="post-view"><i class="fa fa-eye"></i><a href="#">253</a></span>#}
+{#									</div>#}
+{#									<a href="#" title="Read More">Read More <i class="fa fa-angle-right"></i></a>#}
+{#								</div>#}
+{#							</div><!-- Type Post /- -->#}
+{#						</div>#}
+					</div><!-- Row /- -->
+				</div><!-- Container /- -->
+			</div><!-- Recent Post /- -->
 
-{% endfor %}
