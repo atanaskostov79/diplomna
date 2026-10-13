@@ -133,7 +133,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="dropdown active">
-							<a href="index.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+							<a href="{% url 'home' %}" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 							<i class="ddl-switch fa fa-angle-down"></i>
 							<ul class="dropdown-menu">
 								<li><a href="index.html" title="Home 1">Home 1</a></li>
@@ -141,6 +141,7 @@
 								<li><a href="index3.html" title="Home 3">Home 3</a></li>
 							</ul>
 						</li>
+						{% include 'posts/category_menu.html' %}
 						<li class="dropdown mega-dropdown">
 							<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" title="Mega Menu">Mega Menu</a>
 							<i class="ddl-switch fa fa-angle-down"></i>

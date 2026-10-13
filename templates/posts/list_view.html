@@ -3,7 +3,7 @@
 				<!-- Container -->
 				<div class="container">
 					<div class="section-header">
-						<h3>RECENT POSTS</h3>
+						<h3>{{ section_title|default:"RECENT POSTS" }}</h3>
 					</div>
 					<!-- Row -->
 					<div class="row">
@@ -11,23 +11,30 @@
 						<div class="col-md-4 col-sm-6 col-xs-6">
 							<!-- Type Post -->
 
-							<div class="type-post color-1">
-								<div class="entry-cover"><a href="#"><img src="../static/images/recent-post-1.jpg" alt="Post" /></a></div>
+							<div class="type-post {% cycle 'color-1' 'color-5' 'color-6' %}">
+								<div class="entry-cover"><a href="{% url 'post-detail' post.pk %}"><img src="/static/images/{% cycle 'recent-post-1.jpg' 'recent-post-2.jpg' 'recent-post-3.jpg' %}" alt="Post" /></a></div>
 								<div class="entry-content">
 									<div class="post-format"><i class="fa fa-play"></i></div>
-									<div class="post-category"><a href="#" title="business">{{ post.title }}</a></div>
-									<h3 class="entry-title"><a href="#">{{ post.entry_title }}</a></h3>
+									<div class="post-category">
+										{% if post.category %}
+										<a href="{% url 'category' post.category.slug %}" title="{{ post.category.name }}">{{ post.category.name }}</a>
+										{% else %}
+										<a href="{% url 'post-detail' post.pk %}" title="{{ post.title }}">{{ post.title }}</a>
+										{% endif %}
+									</div>
+									<h3 class="entry-title"><a href="{% url 'post-detail' post.pk %}">{{ post.entry_title }}</a></h3>
 									<p>{{ post.content }}</p>
 									<div class="entry-footer">
-										<span class="post-date"><a href="#">02 July, 2016</a></span>
-										<span class="post-like"><i class="fa fa-heart-o"></i><a href="#">320</a></span>
-										<span class="post-view"><i class="fa fa-eye"></i><a href="#">2350</a></span>
+										<span class="post-date">{{ post.created_at|date:"d F, Y" }}</span>
+										<span class="post-view"><i class="fa fa-comment-o"></i> {{ post.comment_count }}</span>
 									</div>
-									<a href="#" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
+									<a href="{% url 'post-detail' post.pk %}" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
 								</div>
 							</div><!-- Type Post /- -->
 
 						</div>
+  {% empty %}
+						<p>Няма постове в тази категория.</p>
   {% endfor %}
 {#						<div class="col-md-4 col-sm-6 col-xs-6">#}
 {#							<!-- Type Post -->#}

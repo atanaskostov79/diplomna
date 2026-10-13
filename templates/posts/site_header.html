@@ -1,0 +1,44 @@
+<header class="header_s header_s1">
+	<div id="slidepanel">
+		<div class="container-fluid no-right-padding no-left-padding top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-3 top-menu">
+						<a href="{% url 'home' %}"><i class="icon_menu"></i> Home</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid no-left-padding no-right-padding middle-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 logo-block">
+						<a href="{% url 'home' %}"><img src="/static/images/logo.png" alt="Logo" /></a>
+					</div>
+					<div class="col-md-8 add-block-banner">
+						<a href="{% url 'home' %}"><img src="/static/images/top-banner.jpg" alt="Banner" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar ownavigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="{% url 'home' %}"><img src="/static/images/logo-2.png" alt="logo"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li{% if not category %} class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
+					{% include 'posts/category_menu.html' %}
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>

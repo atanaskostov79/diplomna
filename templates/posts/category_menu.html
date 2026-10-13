@@ -1,0 +1,11 @@
+<li class="dropdown{% if category %} active{% endif %}">
+	<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+	<i class="ddl-switch fa fa-angle-down"></i>
+	<ul class="dropdown-menu">
+		{% for item in categories %}
+		<li><a href="{% url 'category' item.slug %}" title="{{ item.name }}">{{ item.name }}</a></li>
+		{% empty %}
+		<li><a href="{% url 'home' %}">No categories</a></li>
+		{% endfor %}
+	</ul>
+</li>
